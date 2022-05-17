@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Tapestry', cursive;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/background.jpg);
+    color: white;
+}
+.container{
+    display: flex;
+}
+.left{
+    flex: 30%;
+    margin-top: 100px;
+}
+input[type=text], input[type=number], select{
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+input[type=button]{
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 80%;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+.right{
+    flex: 70%;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+table{
+    text-align: center;
+    margin: 40px;
+}
+table, th, td{
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+}
+.izbrisi{
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: transparent;
+}
+
+.marka_auta{
+    padding-left: 250px;
+    margin-bottom: -30px;
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        flex-direction: column;
+        
+    }
+    .left{
+        padding-left: 20%;
+    }
+    .right{
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .marka_auta{
+        padding-left: 200px;
+        margin-bottom: -30px;
+    }
+}
